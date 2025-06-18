@@ -4,6 +4,4 @@ export interface TreeNode<T> {
   value: T;
 }
 
-export interface Tree<T> {
-  root: TreeNode<T>;
-}
+export type Tree<T> = TreeNode<T> | TreeNode<T>[];
