@@ -2,12 +2,10 @@
   "name": "@repo/vite-config",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./src/index.js",
   "module": "./src/index.js",
   "types": "./src/index.d.ts",
-  "scripts": {
-    "build": "vite build"
-  },
   "exports": {
     ".": {
       "types": "./src/index.d.ts",

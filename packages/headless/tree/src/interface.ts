@@ -1,8 +1,8 @@
 export interface TreeNode<T> {
-  parent: TreeNode<T> | null;
+  parent?: TreeNode<T>;
 
-  nextSibling: TreeNode<T> | null;
-  prevSibling: TreeNode<T> | null;
+  nextSibling?: TreeNode<T>;
+  prevSibling?: TreeNode<T>;
 
   children?: TreeNode<T>[];
   value: T;
