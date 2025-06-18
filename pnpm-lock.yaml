@@ -24,7 +24,17 @@ importers:
         specifier: ^3.2.3
         version: 3.2.3(@types/node@22.15.3)
 
-  packages/headless/tree: {}
+  packages/config/eslint: {}
+
+  packages/config/tailwind: {}
+
+  packages/config/typescript: {}
+
+  packages/headless/tree:
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:^
+        version: link:../../config/typescript
 
   packages/ui/json-viewer:
     dependencies:
