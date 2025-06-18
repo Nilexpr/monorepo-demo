@@ -6,12 +6,12 @@ const Sub: Component<{
   return <div>{props.data}</div>;
 };
 
-export const JsonViewer = () => {
+export const JsonViewer: Component<{ name?: string }> = (props) => {
   const [data, setData] = createSignal<any>(null);
 
   return (
     <div class="bg-background">
-      123
+      {props.name}
       <input
         type="text"
         value={data()}

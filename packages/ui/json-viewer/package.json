@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "exports": {
-    ".": "./src/App.tsx"
+    ".": "./dist/App.js"
   },
   "dependencies": {
     "@repo/tailwind-config": "workspace:^",
