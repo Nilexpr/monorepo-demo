@@ -6,11 +6,12 @@ const Sub: Component<{
   return <div>{props.data}</div>;
 };
 
-const JsonViewer = () => {
+export const JsonViewer = () => {
   const [data, setData] = createSignal<any>(null);
 
   return (
-    <div>
+    <div class="bg-background">
+      123
       <input
         type="text"
         value={data()}
@@ -20,5 +21,3 @@ const JsonViewer = () => {
     </div>
   );
 };
-
-export default JsonViewer;

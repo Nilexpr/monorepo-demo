@@ -11,7 +11,7 @@
     },
     {
       "fileMatch": [
-        "tsconfig.json",
+        "**/tsconfig.json",
         "**/tsconfig/*.json",
         "**/config/typescript/*.json"
       ],
