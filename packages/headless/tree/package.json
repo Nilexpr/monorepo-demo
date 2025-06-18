@@ -7,6 +7,11 @@
     "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "exports": {
+    ".": "./dist/index.js",
+    "./interface": "./dist/interface.js",
+    "./utils": "./dist/utils.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

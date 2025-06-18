@@ -1,4 +1,14 @@
-export const createTree = () => {};
+import { OriginalTreeNode, TreeNode } from "./interface";
 
-// 3. 未定义的变量
-console.log(undefinedVar);
+export const transformTreeNode = <T>(
+  root: OriginalTreeNode<T>
+): TreeNode<T> => {
+  const tree: TreeNode<T> = {
+    parent: null,
+    nextSibling: null,
+    prevSibling: null,
+    value: root.value,
+  };
+
+  return tree;
+};
