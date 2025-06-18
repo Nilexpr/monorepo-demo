@@ -3,5 +3,20 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": ["**/package.json"],
+      "url": "https://json.schemastore.org/package"
+    },
+    {
+      "fileMatch": [
+        "tsconfig.json",
+        "**/tsconfig/*.json",
+        "**/config/typescript/*.json"
+      ],
+      "url": "https://json.schemastore.org/tsconfig"
+    }
+  ],
+  "json.schemaDownload.enable": true
 }
