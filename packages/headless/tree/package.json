@@ -2,20 +2,24 @@
   "name": "tree",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "exports": {
-    ".": "./dist/index.js",
-    "./interface": "./dist/interface.js",
-    "./utils": "./dist/utils.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@repo/typescript-config": "workspace:^"
+    "@repo/typescript-config": "workspace:^",
+    "@repo/vite-config": "workspace:^",
+    "typescript": "^5.0.0"
   }
 }
