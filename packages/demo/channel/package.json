@@ -1,5 +1,5 @@
 {
-  "name": "channel",
+  "name": "@demo/channel",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "solid-js": "^1.9.7"
+    "@effect/platform": "^0.90.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/solid-router": "^1.121.21",
+    "@tanstack/solid-router-devtools": "^1.121.3",
+    "effect": "^3.17.4",
+    "solid-js": "^1.9.7",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
+    "@tanstack/router-plugin": "^1.121.3",
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
     "vite-plugin-solid": "^2.11.7"
